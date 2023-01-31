@@ -7,23 +7,21 @@ $XL: 1200px;
 
 // palette
 $color-white: #fff;
-$color-black: #334148;
-$color-dark: #253a55;
-$color-gray: #f2f7fb;
-$color-orange: #ff2805;
-$color-blue: #04a2d0;
+$color-black: #000;
+$color-dark-blue: #253a55;
+$color-gray: #FDFDFC;
+$color-light-blue:#D2ECF6;
 
 //Colors
-$color-text-primary: $color-black;
-$color-text-secondary: $color-white;
-$color-text-thirdly: $color-dark;
-$color-link: $color-blue;
-$color-hover: $color-orange;
+$color-text-primary: $color-dark-blue;
+$color-text-thirdly: $color-black;
+// $color-text-secondary: $color-dark-blue;
+
 
 //backgrounds
 $bg-primary: $color-gray;
-$bg-secondary: $color-orange;
-$bg-light: $color-white;
+$bg-secondary: $color-light-blue;
+$bg-thirdly:$color-white;
 
 //gradiens
 $gradient-primary: linear-gradient(

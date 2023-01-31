@@ -1,17 +1,18 @@
-{% from 'common/njk/head.njk' import head %}
-{% from 'common/njk/scripts.njk' import scripts %}
+{% from 'common/njk/head.njk' import head %} {% from 'common/njk/scripts.njk'
+import scripts %}
 
 <!DOCTYPE html>
 <html lang="ru">
-
-  {{ head('index', 'Расписание автобусов') }}
-
+  {{
+    head("index", "Расписание автобусов")
+  }}
   <body>
     {% include 'components/header/header.njk' %}
-    <main></main>
-    {% include 'components/hero/hero.njk' %}
-    {% include 'components/services/services.njk' %}
-    {{ scripts('index') }}
+     <main>
+      {% include 'components/hero/hero.njk' %} 
+      {% include 'components/services/services.njk' %}
+     </main>
+      {% include 'components/footer/footer.njk' %}
+    {{ scripts("index") }}
   </body>
-
 </html>

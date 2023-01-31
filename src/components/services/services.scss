@@ -1,6 +1,5 @@
 .services {
   padding: 15px 0 60px;
-  background-color: $bg-light;
   @include media(L) {
     padding: 32px 0 120px;
   }
@@ -23,8 +22,9 @@
 }
 
 .card-services {
+  background-color: $bg-thirdly;
+  box-shadow: 0px 12px 50px 30px #C8CFD11F;
   border-radius: 6px;
-  background-color: $bg-light;
   @include media(M) {
     display: flex;
     align-items: center;

@@ -2,6 +2,7 @@
   position: relative;
   width: 100%;
   padding: 12px 0 16px;
+  background-color: $bg-secondary;
   @include media(XL) {
     padding: 20px;
   }

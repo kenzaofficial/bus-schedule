@@ -5,6 +5,7 @@
   font-size: 10px;
   font-weight: 500;
   line-height: 8px;
+  color: $color-text-thirdly;
   @include media(S) {
     font-size: 15px;
     line-height: 13px;

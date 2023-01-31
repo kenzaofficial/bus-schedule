@@ -1,5 +1,7 @@
 .hero {
-  padding-bottom: 15px;
+  padding: 30px 0 80px;
+  color: $color-text-thirdly;
+  background-color: $bg-secondary;
   @include media(S) {
     padding: 30px 0;
   }
@@ -24,6 +26,7 @@
     }
   }
   p {
+    max-width: 220px;
     font-size: 11px;
     font-weight: 500;
     line-height: 14px;
@@ -35,25 +38,20 @@
 }
 
 .hero__container {
-  @include media(S) {
-    // position: relative;
-  }
   @include media(XL) {
     margin-top: 15px;
   }
 }
 
 .hero__img {
-  display: none;
-  @include media(S) {
     position: absolute;
     top: 0;
-    right: -100px;
+    right: 0;
     display: block;
+    max-width: 193px;
     // max-width: 300px;
-    max-width: 100%;
+    // max-width: 100%;
     overflow: hidden;
-  }
   @include media(M) {
     // top: -140px;
     // max-width: 400px;
