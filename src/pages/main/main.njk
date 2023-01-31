@@ -4,10 +4,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-  {{ head('index', 'Мой курьер') }}
+  {{ head('index', 'Расписание автобусов') }}
 
-  <body class="p-main">
+  <body>
+    {% include 'components/header/header.njk' %}
     <main></main>
+    {% include 'components/hero/hero.njk' %}
+    {% include 'components/services/services.njk' %}
     {{ scripts('index') }}
   </body>
 

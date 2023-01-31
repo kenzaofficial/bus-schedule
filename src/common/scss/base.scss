@@ -30,7 +30,7 @@ html {
   font-size: 12px;
   font-weight: $font-weight-regular;
   line-height: 1.5;
-  color: $color-dark-grey;
+  color: $color-text-primary;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
   -moz-osx-font-smoothing: grayscale;
@@ -43,7 +43,7 @@ html {
 
 body {
   margin: 0;
-  background-color: $color-bg;
+  background-color: $bg-primary;
 }
 
 @for $index from 1 through 6 {
@@ -51,7 +51,6 @@ body {
     margin: 0;
     font-family: $font-family-base;
     font-weight: 500;
-    color: $color-black;
   }
 }
 
@@ -68,7 +67,6 @@ select {
   font-family: $font-family-base;
   font-size: 16px;
   font-weight: $font-weight-regular;
-  color: $color-black;
 }
 
 textarea {
@@ -82,13 +80,13 @@ textarea {
     display: none;
   }
   &::-webkit-input-placeholder {
-    color: $color-black;
+    color: $color-text-primary;
   }
   &::-moz-placeholder {
-    color: $color-black;
+    color: $color-text-primary;
   }
   &:-ms-input-placeholder {
-    color: $color-black;
+    color: $color-text-primary;
   }
   &:focus {
     &::-webkit-input-placeholder {

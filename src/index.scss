@@ -5,13 +5,14 @@
 // Common
 
 @import "common/scss/fonts";
-@import "common/scss/normalize";
-// @import 'common/scss/reset';
+// @import "common/scss/normalize";
+@import "common/scss/reset";
 
 @import "common/scss/base";
 
 // Components
 
-// Pages
-
-@import "pages/main/main";
+@import "components/header/header";
+@import "components/logo/logo";
+@import "components/hero/hero";
+@import "components/services/services";
