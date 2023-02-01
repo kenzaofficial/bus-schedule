@@ -1,15 +1,26 @@
 .services {
   padding: 15px 0 20px;
   @include media(L) {
-    padding: 32px 0 120px;
+    padding: 32px 0 40px;
   }
 }
 
 .services__container {
   margin-top: -78px;
-  padding: 0 7px;
-  @include media(L) {
-    padding: 0 50px;
+  @include media(XL) {
+    margin-top: -95px;
+  }
+}
+
+
+.services__list{
+  @include media(M){
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+  @include media(XL){
+   gap: 35px;
   }
 }
 
@@ -17,20 +28,22 @@
   &:not(:last-child) {
     margin-bottom: 8px;
     @include media(M) {
-      margin-bottom: 15px;
+      margin-bottom: 0;
     }
   }
 }
 
 .card-services {
+  padding: 14px;
   background-color: $bg-thirdly;
   box-shadow: 0px 12px 50px 30px #c8cfd11f;
   border-radius: 6px;
   min-height: 152px;
-  @include media(M) {
+  @include media(S) {
     display: flex;
     align-items: center;
     border: none;
+    min-height: 158px;
   }
 }
 
@@ -38,21 +51,19 @@
   display: grid;
   grid-template-columns: 24px auto 62px;
   align-items: center;
-  padding: 14px;
   background-repeat: no-repeat;
   background-position: top 50px right 16px;
-  gap: 10px 15px;
+  gap: 10px;
   background-size: 60px;
   @include media(M) {
     width: 100%;
     margin: 0;
-    padding: 26px 55px 20px 30px;
     background-position: top 30px right 54px;
     gap: 15px;
   }
   @include media(L) {
-    padding-bottom: 15px;
     background-position: top 30px right 54px;
+    gap: 10px 15px;
   }
   .card-services__logo {
     width: 24px;
@@ -69,6 +80,7 @@
 }
 
 .card-services__title {
+  position: relative;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -84,7 +96,6 @@
   font-size: 12px;
   line-height: 18px;
   @include media(L) {
-    max-width: 350px;
     font-size: 16px;
     line-height: 22px;
   }

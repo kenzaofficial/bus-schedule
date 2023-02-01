@@ -1,6 +1,5 @@
 .advantages {
   padding: 20px 0 40px;
-  background-color: green;
   @include media(XL) {
     padding: 40px 0 80px;
   }
@@ -18,22 +17,59 @@
   font-size: 10px;
   line-height: 12px;
   gap: 5px;
+  @include media(S) {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
   @include media(M) {
+    grid-template-columns: repeat(3, auto);
     max-width: none;
     font-size: 18px;
     line-height: 28px;
     column-gap: 20px;
   }
   .list-item {
+    position: relative;
+    padding: 20px 45px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    border: 2px solid orangered;
     border-radius: 4px;
-    padding: 20px 50px;
+    z-index: 3;
+    &::before {
+      position: absolute;
+      content: "";
+      //     top: 30px;
+      //     left: -7px;
+      // width: 22px;
+      //     height: 11px;
+      // border-radius: 50%;
+      // background-color: yellow;
+      // border: 2px solid $color-orange;
+      // border-radius: 100px 100px 0 0;
+      // background-color: $bg-primary;
+      // border-top: 2px solid red;
+      // border-left: 2px solid red;
+      // border-right: 2px solid red;
+      // transform: rotate(90deg);
+      background: url(../img/Subtract.svg) 0 0 no-repeat;
+      // background: url(../img/hero-mobile.png) 0 0 ;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
     &:not(:last-child) {
       margin-bottom: 15px;
+      @include media(S) {
+        margin-bottom: 0;
+      }
     }
     .list-item__img-wrapper {
+      display: flex;
+      align-items: center;
       width: 40px;
       height: 40px;
       margin-right: 12px;

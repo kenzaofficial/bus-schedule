@@ -1,28 +1,33 @@
 .hero {
-  padding: 25px 0 75px;
+  padding: 30px 0 75px;
   color: $color-text-thirdly;
   background-color: $bg-secondary;
-  @include media(S) {
-    padding: 30px 0;
-  }
   @include media(L) {
     padding: 50px 0;
   }
   @include media(XL) {
-    min-height: 335px;
+    padding: 15px 0 50px;
+    min-height: 320px;
   }
   h1 {
+    position: relative;
+    z-index: 2;
     margin-bottom: 5px;
     font-size: 20px;
     font-weight: 700;
     line-height: 25px;
+    @include media(DESKTOP) {
+      max-width: 435px;
+    }
     @include media(M) {
       font-size: 36px;
       line-height: 48px;
     }
-    @include media(L) {
-      font-size: 48px;
-      line-height: 64px;
+    @include media(XL) {
+      margin-bottom: 20px;
+      font-size: 56px;
+      font-weight: 800;
+      line-height: 66px;
     }
   }
   p {
@@ -30,16 +35,13 @@
     font-size: 12px;
     line-height: 16px;
     @include media(M) {
+      max-width: 390px;
       font-size: 20px;
       line-height: 34px;
     }
-  }
-}
-
-.hero__container {
-  padding: 0 8px;
-  @include media(XL) {
-    margin-top: 15px;
+    @include media(M) {
+      max-width: none;
+    }
   }
 }
 
@@ -49,20 +51,20 @@
   right: 0;
   display: block;
   max-width: 193px;
-  // max-width: 300px;
-  // max-width: 100%;
   overflow: hidden;
+  @include media(S) {
+    max-width: 460px;
+    top: 50px;
+    right: -90px;
+  }
   @include media(M) {
-    // top: -140px;
-    // max-width: 400px;
+    max-width: 800px;
+    top: 0;
+    right: -165px;
   }
   @include media(L) {
-    // top: -160px;
-    // max-width: 470px;
-  }
-  @include media(XL) {
-    // top: -130px;
-    right: 45px;
-    // max-width: 470px;
+    max-width: none;
+    top: 0;
+    right: -180px;
   }
 }
