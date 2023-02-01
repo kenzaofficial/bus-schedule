@@ -31,35 +31,42 @@
   }
   .list-item {
     position: relative;
-    padding: 20px 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
     z-index: 3;
-    &::before {
-      position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 45px;
+    border: 2px solid $color-orange;
+    border-radius: 4px;
+    background-color: $bg-thirdly;
+    @include media(L) {
+      justify-content: flex-start;
+      padding: 27px 45px;
+    }
+    &::before,
+    &::after {
       content: "";
-      //     top: 30px;
-      //     left: -7px;
-      // width: 22px;
-      //     height: 11px;
-      // border-radius: 50%;
-      // background-color: yellow;
-      // border: 2px solid $color-orange;
-      // border-radius: 100px 100px 0 0;
-      // background-color: $bg-primary;
-      // border-top: 2px solid red;
-      // border-left: 2px solid red;
-      // border-right: 2px solid red;
-      // transform: rotate(90deg);
-      background: url(../img/Subtract.svg) 0 0 no-repeat;
-      // background: url(../img/hero-mobile.png) 0 0 ;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      z-index: 2;
+      position: absolute;
+      top: 25px;
+      width: 22px;
+      height: 10px;
+      border: 2px solid $color-orange;
+      border-bottom: none;
+      border-radius: 100px 100px 0 0;
+      background-color: $bg-primary;
+      @include media(XL) {
+        top: 40px;
+        width: 26px;
+        height: 14px;
+      }
+    }
+    &::before {
+      left: -8px;
+      transform: rotate(90deg);
+    }
+    &::after {
+      right: -8px;
+      transform: rotate(-90deg);
     }
     &:not(:last-child) {
       margin-bottom: 15px;
@@ -68,29 +75,24 @@
       }
     }
     .list-item__img-wrapper {
-      display: flex;
-      align-items: center;
-      width: 40px;
-      height: 40px;
-      margin-right: 12px;
       flex-shrink: 0;
+      width: 40px;
+      margin-right: 12px;
+      @include media(L) {
+        width: 60px;
+        margin-right: 25px;
+      }
       img {
         width: 100%;
       }
-      @include media(M) {
-        max-width: 60px;
-        height: 60px;
-      }
-      @include media(XL) {
-        max-width: 60px;
-        height: 60px;
-      }
     }
     h3 {
+      position: relative;
+      max-width: 130px;
       font-size: 14px;
-      line-height: 20px;
       font-weight: 700;
-      color: black;
+      line-height: 20px;
+      color: $color-text-thirdly;
     }
   }
 }
