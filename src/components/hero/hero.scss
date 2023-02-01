@@ -1,5 +1,5 @@
 .hero {
-  padding: 30px 0 80px;
+  padding: 25px 0 75px;
   color: $color-text-thirdly;
   background-color: $bg-secondary;
   @include media(S) {
@@ -12,10 +12,10 @@
     min-height: 335px;
   }
   h1 {
-    margin-bottom: 15px;
-    font-size: 19px;
-    font-weight: 800;
-    line-height: 24px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
     @include media(M) {
       font-size: 36px;
       line-height: 48px;
@@ -27,9 +27,8 @@
   }
   p {
     max-width: 220px;
-    font-size: 11px;
-    font-weight: 500;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 16px;
     @include media(M) {
       font-size: 20px;
       line-height: 34px;
@@ -38,20 +37,21 @@
 }
 
 .hero__container {
+  padding: 0 8px;
   @include media(XL) {
     margin-top: 15px;
   }
 }
 
 .hero__img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: block;
-    max-width: 193px;
-    // max-width: 300px;
-    // max-width: 100%;
-    overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  max-width: 193px;
+  // max-width: 300px;
+  // max-width: 100%;
+  overflow: hidden;
   @include media(M) {
     // top: -140px;
     // max-width: 400px;
