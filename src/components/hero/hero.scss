@@ -48,31 +48,3 @@
     }
   }
 }
-
-.hero__img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
-  max-width: 193px;
-  overflow: hidden;
-  @include media(S) {
-    top: 40px;
-    right: -90px;
-    max-width: 460px;
-  }
-  @include media(M) {
-    top: 0;
-    right: -165px;
-    max-width: 800px;
-  }
-  @include media(L) {
-    top: -70px;
-    right: -190px;
-    max-width: none;
-  }
-  @media (min-width: 1700px) {
-    top: -50px;
-    right: 0;
-  }
-}
