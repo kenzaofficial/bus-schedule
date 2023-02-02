@@ -1,0 +1,15 @@
+.header {
+  position: relative;
+  width: 100%;
+  padding: 15px 0;
+  background-color: $bg-secondary;
+  @include media(XL) {
+    padding: 25px;
+  }
+}
+
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}

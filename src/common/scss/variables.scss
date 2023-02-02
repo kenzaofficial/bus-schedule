@@ -1,21 +1,34 @@
-// Responsive
+// responsive
 
-$S: 576px;
+$S: 500px;
 $M: 768px;
 $L: 992px;
 $XL: 1200px;
 
-// Colors
+// palette
+$color-white: #fff;
+$color-black: #000;
+$color-dark-blue: #253a55;
+$color-gray: #fdfdfc;
+$color-light-blue: #d2ecf6;
+$color-orange: #ff7001;
 
-$color-bg: #f9fdff;
-$color-black: #161b23;
-$color-dark-grey: #424950;
-$color-dark-blue: #012b69;
-$color-orange:#ff6b00;
-$color-primary-blue:#065fe5;
-$color-secondary:#008eff;
+//Colors
+$color-text-primary: $color-dark-blue;
+$color-text-thirdly: $color-black;
 
-// Fonts
+//backgrounds
+$bg-primary: $color-gray;
+$bg-secondary: $color-light-blue;
+$bg-thirdly: $color-white;
 
+//gradiens
+$gradient-primary: linear-gradient(
+  90.2deg,
+  rgba(255, 255, 255, 0.38) 13.09%,
+  rgba(255, 255, 255, 0.27) 114.59%
+);
+
+// fonts
 $font-family-base: "Onest", "Helvetica", "Arial", sans-serif;
 $font-weight-regular: 400;
