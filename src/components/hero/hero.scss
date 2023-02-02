@@ -51,29 +51,3 @@
     }
   }
 }
-
-.hero__img {
-  position: absolute;
-  top: -60px;
-  right: 0;
-  z-index: 3;
-  display: block;
-  max-width: 193px;
-  overflow: hidden;
-  @include media(S) {
-    top: -20px;
-    max-width: 340px;
-  }
-  @include media(M) {
-    top: 0;
-    max-width: 580px;
-  }
-  @include media(L) {
-    top: -140px;
-    max-width: 870px;
-  }
-  @media (min-width: 1700px) {
-    top: -100px;
-    right: 0;
-  }
-}

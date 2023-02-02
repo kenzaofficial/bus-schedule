@@ -7,14 +7,16 @@ import scripts %}
   {{
     head("index", "Расписание автобусов")
   }}
-  <body>
-    {% include 'components/header/header.njk' %}
-    <main>
-      {% include 'components/hero/hero.njk' %}
-      {% include 'components/services/services.njk' %}
-      {% include 'components/advantages/advantages.njk' %}
-    </main>
-    {% include 'components/footer/footer.njk' %}
+  <body class="body">
+    <div class="wrapper">
+      {% include 'components/header/header.njk' %}
+      <main class="main">
+        {% include 'components/hero/hero.njk' %}
+        {% include 'components/services/services.njk' %}
+        {% include 'components/advantages/advantages.njk' %}
+      </main>
+      {% include 'components/footer/footer.njk' %}
+    </div>
     {{ scripts("index") }}
   </body>
 </html>

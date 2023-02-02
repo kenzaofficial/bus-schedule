@@ -24,6 +24,12 @@
   clip-path: inset(100%);
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
 *,
 ::after,
 ::before {
@@ -37,6 +43,7 @@
 }
 
 html {
+  height: 100%;
   font-family: $font-family-base;
   font-size: 12px;
   font-weight: $font-weight-regular;
@@ -52,6 +59,7 @@ html {
 }
 
 body {
+  height: 100%;
   margin: 0;
   background-color: $bg-primary;
 }
