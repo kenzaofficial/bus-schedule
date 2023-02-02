@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   padding: 25px 0 75px;
   background-color: $bg-secondary;
   color: $color-text-thirdly;
@@ -51,23 +52,24 @@
 
 .hero__img {
   position: absolute;
-  top: 0;
+  top: -60px;
   right: 0;
+  z-index: 3;
   display: block;
   max-width: 193px;
   overflow: hidden;
   @include media(S) {
-    top: 40px;
+    top: -20px;
     right: -90px;
     max-width: 460px;
   }
   @include media(M) {
-    top: 0;
+    top: -80px;
     right: -165px;
     max-width: 800px;
   }
   @include media(L) {
-    top: -70px;
+    top: -140px;
     right: -190px;
     max-width: none;
   }
