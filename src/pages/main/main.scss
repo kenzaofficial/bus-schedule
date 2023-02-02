@@ -1,0 +1,32 @@
+.body {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    width: 169px;
+    height: 200px;
+    background: url("../img/hero-bg-blur-mob.png") top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    @include media(S) {
+      width: 100%;
+    }
+    @include media(M) {
+      height: 300px;
+    }
+    @include media(L) {
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 1400px;
+      height: 416px;
+      background-image: url("../img/hero-bus-desktop.png");
+    }
+    @include media(XL) {
+      left: calc(50% + 100px);
+      max-width: 1600px;
+      height: 520px;
+    }
+  }
+}
