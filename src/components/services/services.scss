@@ -1,5 +1,6 @@
 .services {
   position: relative;
+  z-index: 10;
   padding: 15px 0 20px;
   background-color: $bg-primary;
   @include media(L) {
@@ -89,6 +90,7 @@
 }
 
 .card-services__title {
+  position: relative;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
