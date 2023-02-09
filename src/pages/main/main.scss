@@ -1,10 +1,11 @@
 .body {
   position: relative;
+  z-index: 2;
   &::before {
     content: "";
     position: absolute;
     right: 0;
-    z-index: 10;
+    z-index: 1;
     width: 169px;
     height: 200px;
     background: url("../img/hero-bg-blur-mob.png") top right;
